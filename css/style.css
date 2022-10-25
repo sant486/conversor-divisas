@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(15,194,192);
+    background: radial-gradient(circle, rgba(15,194,192,1) 0%, rgba(12,171,168,1) 35%, rgba(2,53,53,1) 100%);
+}
+
+h1 {
+    grid-area: h1;
+    font-size: 28px;
+}
+
+.de {
+    grid-area: de;
+    font-family: 'Orbitron', sans-serif;
+    appearance: none;
+    display: inline-block;
+	width: 100%;
+	cursor: pointer;
+    padding: 7px 10px;
+    height: 42px;
+    outline: 0; 
+    border: 0;
+	border-radius: 0;
+	background: #fffefe;
+	font-size: 1em;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+select:hover {
+    background: rgb(12, 212, 209);
+}
+
+.a {
+    grid-area: a;
+    font-family: 'Orbitron', sans-serif; 
+    appearance: none;
+	width: 100%;
+	cursor: pointer;
+    padding: 7px 10px;
+    height: 42px;
+    outline: 0; 
+    border: 0;
+	border-radius: 0;
+	background: #fffefe;
+	font-size: 1em;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.valor {
+    grid-area: valor;
+    font-family: 'Orbitron', sans-serif;
+    appearance: none;
+	width: 100%;
+	cursor: pointer;
+    height: 42px;
+    outline: 0; 
+    border: 0;
+	border-radius: 0;
+	background: #fffefe;
+	font-size: 1em;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease; 
+}
+
+.resultado {
+    grid-area: resultado;
+    font-family: 'Orbitron', sans-serif;
+    appearance: none;
+    display: inline-block;
+	width: 100%;
+	cursor: pointer;
+    height: 42px;
+    outline: 0; 
+    border: 0;
+	border-radius: 0;
+	background: #fffefe;
+	font-size: 1em;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease; 
+}
+
+.vector {
+    grid-area: vector;
+    font-family: 'Orbitron', sans-serif;
+    justify-self: end;
+}
+
+.main__container {
+    font-family: 'Orbitron', sans-serif;  
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 2fr;
+    grid-template-rows: 0.3fr 0.1fr 0.1fr 0.2fr;
+    grid-template-areas:
+    "h1 h1 h1"
+    "de vector a"
+    "valor vector resultado"
+    "iframe iframe iframe";
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(228, 224, 211);
+    width: 31.25rem;
+    height: 31.25rem;
+    margin-top: 50px;
+    border: 3px solid black;
+    border-radius: 15%;
+    padding: 2rem;
+    box-shadow: 5px 5px 20px black;
+}
+
+iframe {
+    grid-area: iframe;
+    width: 300px;
+    height: 200px;
+}
