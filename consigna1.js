@@ -20,6 +20,9 @@ let opcionProcesador= prompt("Digite 1 si desea i5, Digite 2 si desea i7, Digite
 let opcionRam = prompt("Digite 1 si desea 8GB RAM, Digite 2 si desea 16GB RAM, Digite 3 si desea 32GB RAM");
 let opcionDisco = prompt("Digite 1 si desea ampliar el disco de 500GB a TB, Digite 0 si no lo desea");
 let precio; 
+function almacenamiento_extra (precio) {
+    return precio + 300;    
+}
 
 switch (opcionProcesador) {
     case "1": 
@@ -83,11 +86,11 @@ switch (opcionProcesador) {
 }
 
 if (opcionDisco == "1") {
-    precio += 300;
+    let total = almacenamiento_extra(precio);
+    alert ("El precio del computador es de: "+total+" USD");
+} else {
     alert ("El precio del computador es de: "+precio+" USD");
 }
-
-alert ("El precio del computador es de: "+precio+" USD");
 
 // CONSIGNA CICLOS 
 
