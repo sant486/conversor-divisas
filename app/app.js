@@ -3,12 +3,30 @@
 // let respuesta_conversor = conversor ();
 // console.log(respuesta_conversor);
 
+//Objetos 
+const dolares = {
+    //Recordar que es el precio de cada moneda respecto al dolar (1USD)
+    dolar_a_peso:4797,
+    dolar_a_euro:0.96586,
+}
+
+const peso_colombiano = {
+    peso_a_dolar:0.00021,
+    peso_a_euro: 0.0002,
+}
+
+const euros = {
+    euro_a_dolar:1.035,
+    euro_a_peso:4965,
+}
+
 
 //funciones 
 function convertir () {
     let valor = parseFloat(document.getElementById("ingreso").value);
     let de=document.getElementById("de").value;
     let a=document.getElementById("a").value;
+    let boton_convertidor = document.getElementById("convertidor");
     let peso= dolares.dolar_a_peso;
     let euro = dolares.dolar_a_euro;
     let resultado = 0;
@@ -40,29 +58,6 @@ function convertir () {
     else {
         resultado=valor;
     }
-    document.getElementById("resultado").value=resultado.toFixed(2);
-    console.log(select);
-    console.log(de, a);
+    document.getElementById("resultado").value=resultado.toFixed(0);
 }
 
-//objetos 
-const dolares = {
-    //Recordar que es el precio de cada moneda respecto al dolar (1USD)
-    dolar_a_peso:4797,
-    dolar_a_euro:0.96586,
-}
-
-const peso_colombiano = {
-    peso_a_dolar:0.00021,
-    peso_a_euro: 0.0002,
-}
-
-const euros = {
-    euro_a_dolar:1.035,
-    euro_a_peso:4965,
-}
-
-console.log(dolares, peso_colombiano, euros);
-//console.log(select);
-console.log(de, a);
-console.log(de.options);
