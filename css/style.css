@@ -143,7 +143,40 @@ iframe {
     }
 
     .main__container {
-        width: 250px;
+        width: 250px  !important;
+        height: 250px;
+        font-size: 10px;
+        gap: 20px;
     }
+
+    .de {
+        width: 80px;
+        font-size: 10px; 
+    }
+
+    .a {
+        width: 80px;
+        font-size: 10px; 
+    }
+
+    .valor {
+        width: 80px;
+        font-size: 10px; 
+    }
+
+    .resultado {
+        width: 80px;
+        font-size: 10px; 
+    }
+
+    iframe {
+        width: 200px;
+        height: 100px;
+    }
+
+    .vector {
+        width: 10px;
+    }
+    
 
 }
