@@ -8,14 +8,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,600&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        
     <title>Conversor de Divisas</title>
     
 </head>
 <body>
+    <!-- Menu Navegacion -->
+        <nav class="navbar navbar-expand-lg nav__container">
+            <div class="container-fluid">
+            <a class="name" href="./index.html">
+                SANTIAGO MARAMER DEV
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse options" id="navbarNavAltMarkup">
+                <div class="navbar-nav nav__bar">
+                <a class="home" href="./index.html">Home</a>
+                <a class="about__me" href="#aboutMe">About me</a>
+                <a class="skill" href="#skills__tittle">Skills</a>
+                <a class="contact" href="#contact__tittle">Contact</a>
+                <a class="projects" href="./projects.html">Projects</a>
+                <a class="certification" href="./certifications.html">Certifications</a>
+                </div>
+            </div>
+            </div>
+        </nav> 
+    
     <center>
         <div class="main__container">
 
-            <h1>Convertidor de Divisas</h1>
+            <h1 class="tittle_container">Convertidor de Divisas</h1>
             
             <select class="de" name="de" id="de">
                 <option value="1">Dolar</option>
@@ -37,12 +62,17 @@
                 <img onclick="convertir()" class="convertidor" src="./app/images/inter2.png" alt="convert">
             </figure>
 
-            <iframe src="https://www.youtube.com/embed/ARWg160eaX4" frameborder="0"></iframe>
-            
+            <iframe src="https://es.widgets.investing.com/live-currency-cross-rates?theme=darkTheme&hideTitle=true&roundedCorners=true&pairs=1,11759,1624,2112,2124" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
         </div>
     </center>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <p>Copyright-Santiago Maramer</p>
+    </footer>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
     <script src="./app/app.js"></script>
 </body>
 </html>
