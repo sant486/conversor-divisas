@@ -196,6 +196,9 @@ footer {
         font-size: 18px;   
     }
 
+    .nav__container .name {
+        font-size: 15px;
+    }
     .main__container {
         width: 300px  !important;
         height: 300px;
@@ -234,10 +237,12 @@ footer {
     }
 
     .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 14px;
+        position: absolute;
+        bottom: 0;
+        width: 400px;
     }
-
-
-    
-
 }
