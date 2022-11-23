@@ -31,7 +31,6 @@ body {
     transform: scale(1.1);
 }
 .nav__container .name {
-    /* color: rgba(0, 0, 0, 0.723); */
     color: white;
     -webkit-text-stroke: 0.2px rgb(0, 0, 0);
     text-decoration: none;
@@ -191,15 +190,17 @@ footer {
 
 @media only screen and (max-width: 420px) {
 
-    h1 {
-        font-size: 15px;   
+    .tittle_container {
+        color: white;
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+        font-size: 18px;   
     }
 
     .main__container {
-        width: 250px  !important;
-        height: 250px;
+        width: 300px  !important;
+        height: 300px;
         font-size: 10px;
-        gap: 20px;
+        gap: 50px 20px;
     }
 
     .de {
@@ -223,6 +224,7 @@ footer {
     }
 
     iframe {
+        display: none;
         width: 200px;
         height: 100px;
     }
@@ -234,6 +236,8 @@ footer {
     .footer {
         font-size: 14px;
     }
+
+
     
 
 }
