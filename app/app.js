@@ -1,7 +1,19 @@
-// import {conversor, convertirporfecha} from "./funciones";
+//Login
 
-// let respuesta_conversor = conversor ();
-// console.log(respuesta_conversor);
+let usuario;
+let contraseña;
+let usuarioLS;
+
+usuarioLS = localStorage.getItem("usuario");
+console.log(usuarioLS);
+
+if (usuarioLS==null){
+    usuario=prompt("Ingrese usuario");
+    contraseña=prompt("Ingrese su contraseña");
+    localStorage.setItem("usuario", usuario);
+} else {
+    alert("Hola, ya estas logeado, disfruta");
+}
 
 //Objetos 
 const dolares = {
